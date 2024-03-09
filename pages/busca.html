@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letterboxd • Social film discovery.</title>
 
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
     <script src="https://kit.fontawesome.com/d3d62a63e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="main">
+    <main>
         <header>
             <nav>
                 <div id="logo" class="replace"></div>
@@ -24,18 +24,18 @@
                     <li><a href="#">journal</a></li>
                 </ul>
                 <fieldset id="busca">
-                    <form action="pages/busca.html" method="post">
+                    <form action="busca.html" method="post">
                         <input type="text" name="search" id="search" />
                         <button type="submit" id="btn-search"><i class="fas fa-search"></i></button>
                     </form>
                 </fieldset>
             </nav>
         </header>
-        <main id="corpo">
+        <section id="search-results">
             <p>Achados pelo menos <span id="qtde-search"></span> resultados para "<span id="text-search"></span>".</p>
             <hr>
-        </main>
-    </div>
+        </section>
+    </main>
 
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/config.js"></script>

@@ -13,7 +13,7 @@ function ready() {
       document.getElementById("qtde-search").innerHTML = response.total_results;
       document.getElementById("text-search").innerHTML = busca;
       response.results.forEach((element) => {
-        document.getElementById("corpo").insertAdjacentHTML(
+        document.getElementById("search-results").insertAdjacentHTML(
           "beforeend",
           `<form method='get' action='movie-details.html'>
               <input type='hidden' name='id' value='${element.id}'/>

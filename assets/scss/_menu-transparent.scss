@@ -1,0 +1,75 @@
+@import "global";
+
+header {
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  background: $bg-top-gradient;
+
+  nav {
+    width: 950px;
+    margin-top: -1.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #logo {
+      height: 25px;
+      width: 273px;
+
+      position: relative;
+
+      background-position: -350px 0;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin-right: 0.5rem;
+
+        display: inline;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Rubik";
+          font-weight: 700;
+          font-size: 10pt;
+
+          color: $color-light;
+        }
+      }
+    }
+  }
+  #busca {
+    display: flex;
+
+    background-color: $color-light;
+
+    border: 0;
+    border-radius: $round-pill-radius;
+
+    form {
+      #search {
+        width: 110px;
+        height: 30px;
+
+        border: 0;
+        border-radius: $round-pill-radius 0 0 $round-pill-radius;
+      }
+
+      #btn-search {
+        height: 30px;
+
+        padding: 0 0.5rem;
+
+        background-color: $color-light;
+
+        border: 0;
+        border-radius: 0 $round-pill-radius $round-pill-radius 0;
+      }
+    }
+  }
+}

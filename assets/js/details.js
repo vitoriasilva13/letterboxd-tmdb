@@ -6,7 +6,7 @@ function ready() {
   fetch(getInfo("movie", null, searchParams.get("id"), api_language), options)
     .then((data) => data.json())
     .then((data) => {
-      document.querySelectorAll(".main-picture")[0].style.background =
+      document.getElementById("main-picture").style.background =
         "url(" +
         getImage(1280, data.backdrop_path) +
         ") no-repeat center/cover";

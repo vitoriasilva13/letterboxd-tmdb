@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Source Serif';
+    font-style: normal;
+    font-weight: bold;
+    src: local(Source_Serif_4), url(../fonts/Source_Serif_4/static/SourceSerif4-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Source Serif';
+    font-style: normal;
+    font-weight: normal;
+    src: local(Source_Serif_4), url(../fonts/Source_Serif_4/static/SourceSerif4-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    src: local(Rubik), url(../fonts/Rubik/static/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local(Rubik), url(../fonts/Rubik/static/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    src: local(Rubik), url(../fonts/Rubik/static/Rubik-Regular.ttf);
+}
