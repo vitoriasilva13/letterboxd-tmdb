@@ -15,12 +15,10 @@ function ready() {
       response.results.forEach((element) => {
         document.getElementById("search-results").insertAdjacentHTML(
           "beforeend",
-          `<form method='get' action='movie-details.html'>
-              <input type='hidden' name='id' value='${element.id}'/>
-              <button type='submit'><img width='60' src='${getImage(
-                null,
-                element.poster_path
-              )}'/>${element.title}</button></form><br/>`
+          `<div><a href='movie-details.html?id=${element.id}'>
+          <img width='60' src='${getImage(null, element.poster_path)}'/></a>${
+            element.title
+          }</div>`
         );
       });
     })

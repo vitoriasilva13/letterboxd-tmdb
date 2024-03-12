@@ -1,4 +1,4 @@
-@import "menu-transparent";
+@import "global";
 
 body {
   display: flex;
@@ -34,7 +34,7 @@ main {
   }
 }
 
-section {
+section.details {
   width: 950px;
   margin-top: 400px;
   margin: 400px auto 0;
@@ -45,6 +45,10 @@ section {
   .poster {
     border-radius: $round-pill-radius;
   }
+}
+
+section#search-results {
+  background: $img-bg-standard;
 }
 
 .replace {
